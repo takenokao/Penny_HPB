@@ -72,4 +72,16 @@ p.btn-border:hover {
         color: #fff;
         background: #000;
     }
+
+     .video-wrap {
+        height: 100vh;
+    }
+
+    .video-wrap video {
+        width: auto;
+        height: 100%;
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+    }
 }    
