@@ -6,12 +6,51 @@
         <meta name="description" content="Happy Birthday Mei">  <!--うんち-->
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width">
+            <!-- jQuery ライブラリの読み込み -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     </head>
+
+
     <body> 
         <div class="video-wrap">
-          <video src="HPB_Mei_2.mov" autoplay loop muted playsinline>   <!--ダンシングペニワはここから → https://aidn.jp/wowa/336275269-->
+          <video src="HPB_Mei_.mov" autoplay loop muted playsinline>  <!--ダンシングペニワはここから → https://aidn.jp/wowa/336275269-->
             <img src="Penny_HPB.JPG" alt="Placeholder">
           </video>
         </div>
 
+
+        <div class="audio_wrap">
+            <div class="audio_button"></div>
+            <audio id="audio" src="nitijou.mp3" loop>
+              あなたのブラウザーは <code>audio</code> 要素をサポートしていません。
+            </audio>
+        </div>
+        
+        <div class="link_wrap">
+            <a href="https://google.com" class="link_button"></a>
+        </div>
+
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var audioButton = document.querySelector(".audio_button");
+                var audio = document.getElementById("audio");
+            
+                audioButton.addEventListener("click", function() {
+                    if (audio.paused) {
+                        audio.play();
+                        audioButton.classList.remove("stop");
+                    } else {
+                        audio.pause();
+                        audioButton.classList.add("stop");
+                    }
+                });
+            });
+        </script>
+        
+
     </body>
+
+
+</html>
