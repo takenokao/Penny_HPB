@@ -43,6 +43,46 @@ p.btn-border:hover {
 }
 
 
+.audio_wrap {
+    position: relative;
+    display: inline-block; /* インラインブロック要素として配置 */
+}
+
+
+
+.audio_button {
+    width: 100px;
+    height: 100px;
+    /* バックグラウンド画像の設定 */
+    background-image: url('ballon00.jpg'); /* 画像のパスを指定 */
+    background-size: cover; /* 画像を要素に合わせて表示 */
+    background-position: center; /* 画像を中央に配置 */
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed; /* 画面に固定配置 */
+    top: 20px; /* 画面の上からの距離 */
+    right: 140px; /* 画面の右からの距離 */
+}
+
+
+.audio_button.stop {
+    background-image: url('break04.jpg'); /* 停止した後のアイコン */
+}
+
+
+.link_button {
+    width: 100px; /* 幅を音声ボタンと同じに設定 */
+    height: 100px; /* 高さを音声ボタンと同じに設定 */
+    background-image: url('IMG_86000.JPG'); /* リンクアイコンのパスを指定 */
+    background-size: cover; /* 画像を要素に合わせて表示 */
+    background-position: center; /* 画像を中央に配置 */
+    border-radius: 50%; /* 角を丸くする */
+    cursor: pointer;
+    position: fixed;
+    top: 20px; /* 音声ボタンと同じ位置に配置 */
+    right: 20px; /* 音声ボタンの右隣に配置 */
+}
+
 
 
 
@@ -73,7 +113,6 @@ p.btn-border:hover {
         background: #000;
     }
 
-   
     .video-wrap {
         height: 100vh;
     }
@@ -85,6 +124,47 @@ p.btn-border:hover {
         min-height: 100%;
         object-fit: cover;
     }
+
+
+.audio_button {
+    width: 50px;
+    height: 50px;
+    /* バックグラウンド画像の設定 */
+    background-image: url('ballon00.jpg'); /* 画像のパスを指定 */
+    background-size: cover; /* 画像を要素に合わせて表示 */
+    background-position: center; /* 画像を中央に配置 */
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed; /* 画面に固定配置 */
+    top: 20px; /* 画面の上からの距離 */
+    right: 21%; /* 画面の右からの距離 */
+}
+
+
+.audio_button.stop {
+    background-image: url('break04.jpg'); /* 停止した後のアイコン */
+}
+
+
+.link_button {
+    width: 50px; /* 幅を音声ボタンと同じに設定 */
+    height: 50px; /* 高さを音声ボタンと同じに設定 */
+    background-image: url('IMG_86000.JPG'); /* リンクアイコンのパスを指定 */
+    background-size: cover; /* 画像を要素に合わせて表示 */
+    background-position: center; /* 画像を中央に配置 */
+    border-radius: 50%; /* 角を丸くする */
+    cursor: pointer;
+    position: fixed;
+    top: 20px; /* 音声ボタンと同じ位置に配置 */
+    right: 20px; /* 音声ボタンの右隣に配置 */
+}
+
+
+     
+}    
+
+
+
      
 
 }    
