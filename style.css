@@ -46,7 +46,7 @@ p.btn-border:hover {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     h1 {
          font-family: 'Zen Maru Gothic', serif;
          font-family: 'Rampart One', sans-serif;
