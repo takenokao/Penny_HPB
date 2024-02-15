@@ -1,13 +1,12 @@
-// 音声再生ボタンのクリックイベントの処理
-$(function () {
+$(document).ready(function() {
   $(".audio_button").on("click", function () {
-      var audio = document.getElementById("audio");
+      var audio = $("#audio")[0]; // jQueryを使用してオーディオ要素を取得します
       if (audio.paused) {
           audio.play();
-          $(this).toggleClass("stop"); // クラスを追加/削除する代わりに、toggleClassを使用します。
+          $(this).toggleClass("stop");
       } else {
           audio.pause();
-          $(this).toggleClass("stop"); // クラスを追加/削除する代わりに、toggleClassを使用します。
+          $(this).toggleClass("stop");
       }
   });
 });
