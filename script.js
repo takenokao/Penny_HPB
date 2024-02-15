@@ -1,14 +1,9 @@
-window.onload = function() {
-  var audioButton = document.querySelector(".audio_button");
-  var audio = document.getElementById("audio");
 
-  audioButton.addEventListener("click", function() {
-      if (audio.paused) {
-          audio.play();
-          audioButton.classList.remove("stop");
-      } else {
-          audio.pause();
-          audioButton.classList.add("stop");
-      }
-  });
-};
+document.addEventListener("DOMContentLoaded", function() {
+    var audioButton = document.querySelector(".audio_button");
+
+    audioButton.addEventListener("click", function() {
+        // ボタンのクラスを切り替える
+        audioButton.classList.toggle("stop");
+    });
+});
