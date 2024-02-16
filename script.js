@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function() {
     var audioButton = document.querySelector(".audio_button");
 
@@ -7,3 +6,4 @@ document.addEventListener("DOMContentLoaded", function() {
         audioButton.classList.toggle("stop");
     });
 });
+
