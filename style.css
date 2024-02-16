@@ -54,7 +54,7 @@ p.btn-border:hover {
     width: 100px;
     height: 100px;
     /* バックグラウンド画像の設定 */
-    background-image: url('ballon00.jpg'); /* 画像のパスを指定 */
+    background-image: url('ballon00.jpeg'); /* 画像のパスを指定 */
     background-size: cover; /* 画像を要素に合わせて表示 */
     background-position: center; /* 画像を中央に配置 */
     border-radius: 50%;
